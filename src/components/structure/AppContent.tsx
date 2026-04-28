@@ -1,8 +1,8 @@
 import { SafeAreaView } from "react-native-safe-area-context";
-import { appStyles } from "../../styles/appStyles";
+import { structureStyles } from "../../styles/structureStyles";
 
 export const AppContent = () => (
-    <SafeAreaView style={appStyles.background}>
+    <SafeAreaView style={structureStyles.background}>
         
     </SafeAreaView>
 );

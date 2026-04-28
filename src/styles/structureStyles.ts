@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 
-export const appStyles = StyleSheet.create({
+export const structureStyles = StyleSheet.create({
     background: {
         flex: 1,
         backgroundColor: "black"
