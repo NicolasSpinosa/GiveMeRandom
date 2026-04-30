@@ -14,7 +14,12 @@ export const AppHeader = ({
 
     return (
         <View style={appStyles.header}>
-            <Button label="HELLO"/>
+            <Button
+                label="HELLO"
+                buttonProps={{
+                    onPress: navigation.openDrawer
+                }}
+            />
             <Text style={appStyles.headerTitle}>{title}</Text>
         </View>
     );
