@@ -13,7 +13,7 @@ export const Button = ({
     label,
     labelProps,
 }: ButtonProps) => (
-    <Pressable>
+    <Pressable {...buttonProps}>
         {label && (
             <Text {...labelProps}>{label}</Text>
         )}
