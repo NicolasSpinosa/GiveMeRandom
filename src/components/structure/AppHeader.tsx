@@ -1,6 +1,7 @@
 import { DrawerHeaderProps } from "@react-navigation/drawer";
 import { View } from "react-native";
 import { Text } from "../generics/Text";
+import { appStyles } from "../../styles/appStyles";
 
 export const AppHeader = ({
     layout,
@@ -11,7 +12,7 @@ export const AppHeader = ({
     const title = options.title ?? route.name;
 
     return (
-        <View>
+        <View style={appStyles.header}>
             <Text>{title}</Text>
         </View>
     );
