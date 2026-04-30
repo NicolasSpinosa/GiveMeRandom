@@ -1,9 +1,9 @@
 import { View } from "react-native";
-import { structureStyles } from "../../styles/structureStyles";
+import { appStyles } from "../../styles/appStyles";
 import { Text } from "../generics/Text";
 
 export const ScreenForNumbers = () => (
-    <View style={structureStyles.screen}>
+    <View style={appStyles.screen}>
         <Text>Numbers</Text>
     </View>
 );
