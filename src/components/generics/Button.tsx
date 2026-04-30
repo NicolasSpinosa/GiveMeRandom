@@ -4,7 +4,7 @@ import { Text } from "./Text";
 export type ButtonProps = {
     buttonProps?: PressableProps;
 
-    label: string;
+    label?: string;
     labelProps?: TextProps;
 }
 
