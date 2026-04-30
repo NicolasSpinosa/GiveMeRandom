@@ -13,7 +13,7 @@ export const AppHeader = ({
 
     return (
         <View style={appStyles.header}>
-            <Text>{title}</Text>
+            <Text style={appStyles.headerTitle}>{title}</Text>
         </View>
     );
 };
