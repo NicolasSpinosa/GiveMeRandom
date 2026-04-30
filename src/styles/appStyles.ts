@@ -17,6 +17,9 @@ export const appStyles = StyleSheet.create({
         gap: 8,
 
         zIndex: 1,
-        elevation: 4,
+        elevation: 4
     },
+    headerTitle: {
+        fontSize: 18
+    }
 });
