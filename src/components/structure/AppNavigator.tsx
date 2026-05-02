@@ -1,8 +1,8 @@
-import { createDrawerNavigator, DrawerContentComponentProps, DrawerContentScrollView, DrawerHeaderProps, DrawerItem, DrawerItemList } from "@react-navigation/drawer";
+import { createDrawerNavigator, DrawerHeaderProps } from "@react-navigation/drawer";
 import { NavigationContainer } from "@react-navigation/native";
 import { ScreenForNumberRange } from "../screens/ScreenForNumberRange";
 import { AppHeader } from "./AppHeader";
-import { View } from "react-native";
+import { ScreenForOptions } from "../screens/ScreenForOptions";
 
 const Drawer = createDrawerNavigator();
 const appHeader = (props: DrawerHeaderProps) => <AppHeader {...props}/>;
@@ -11,16 +11,11 @@ export const AppNavigator = () => (
     <NavigationContainer>
         <Drawer.Navigator
             screenOptions={{
-                header: appHeader,
-                drawerStyle: {backgroundColor: "none"},
-                drawerContentStyle: {backgroundColor: "white"},
-                drawerItemStyle: {
-                    borderRadius: 8,
-                },
-                drawerLabelStyle: {fontSize: 18}
+                header: appHeader
             }}
         >
             <Drawer.Screen name="Number range" component={ScreenForNumberRange}/>
+            <Drawer.Screen name="Options" component={ScreenForOptions}/>
         </Drawer.Navigator>
     </NavigationContainer>
 );
