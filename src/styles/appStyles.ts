@@ -10,16 +10,17 @@ export const appStyles = StyleSheet.create({
         backgroundColor: "white"
     },
     header: {
-        padding: 8,
+        padding: 12,
 
         flexDirection: "row",
         alignItems: "center",
-        gap: 8,
+        gap: 24,
 
         zIndex: 1,
         elevation: 4
     },
     headerTitle: {
-        fontSize: 18
+        fontSize: 18,
+        fontWeight: "bold"
     }
 });
