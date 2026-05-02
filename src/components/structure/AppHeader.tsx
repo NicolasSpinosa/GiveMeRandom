@@ -2,7 +2,7 @@ import { DrawerHeaderProps } from "@react-navigation/drawer";
 import { View } from "react-native";
 import { Text } from "../generics/Text";
 import { appStyles } from "../../styles/appStyles";
-import { Button } from "../generics/Button";
+import { AppHederButton } from "./AppHeaderButton";
 
 export const AppHeader = ({
     layout,
@@ -14,12 +14,7 @@ export const AppHeader = ({
 
     return (
         <View style={appStyles.header}>
-            <Button
-                label="HELLO"
-                buttonProps={{
-                    onPress: navigation.openDrawer
-                }}
-            />
+            <AppHederButton onPress={navigation.openDrawer}/>
             <Text style={appStyles.headerTitle}>{title}</Text>
         </View>
     );
