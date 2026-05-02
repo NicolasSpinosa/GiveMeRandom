@@ -1,6 +1,7 @@
 import { TextProps, View } from "react-native";
 import { appStyles } from "../../styles/appStyles";
 import { Text } from "../generics/Text";
+import { genericStyles } from "../../styles/genericStyles";
 
 type SettingProps = {
     label: string,
@@ -13,7 +14,7 @@ const Setting = ({
     labelProps,
     Component
 }: SettingProps) => (
-    <View style={{flexDirection: "row", justifyContent: "space-between"}}>
+    <View style={genericStyles.setting}>
         <Text {...labelProps}>{label}</Text>
         <Component/>
     </View>
