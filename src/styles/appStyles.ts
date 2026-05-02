@@ -9,6 +9,7 @@ export const appStyles = StyleSheet.create({
         padding: 8,
 
         flex: 1,
+        gap: 8,
 
         backgroundColor: "white"
     },
