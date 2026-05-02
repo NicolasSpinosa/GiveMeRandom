@@ -2,7 +2,7 @@ import { TextInput, View } from "react-native";
 import { appStyles } from "../../styles/appStyles";
 import { Text } from "../generics/Text";
 
-export const ScreenForNumbers = () => (
+export const ScreenForNumberRange = () => (
     <View style={appStyles.screen}>
         <View style={{flexDirection: "row", gap: 8}}>
             <Text>Min:</Text>

@@ -1,6 +1,6 @@
 import { createDrawerNavigator, DrawerHeaderProps } from "@react-navigation/drawer";
 import { NavigationContainer } from "@react-navigation/native";
-import { ScreenForNumbers } from "../screens/ScreenForNumbers";
+import { ScreenForNumberRange } from "../screens/ScreenForNumberRange";
 import { AppHeader } from "./AppHeader";
 
 const Drawer = createDrawerNavigator();
@@ -13,7 +13,7 @@ export const AppNavigator = () => (
                 header: appHeader
             }}
         >
-            <Drawer.Screen name="Numbers" component={ScreenForNumbers}/>
+            <Drawer.Screen name="Number range" component={ScreenForNumberRange}/>
         </Drawer.Navigator>
     </NavigationContainer>
 );
