@@ -6,7 +6,10 @@ export const appStyles = StyleSheet.create({
         backgroundColor: "black"
     },
     screen: {
+        padding: 8,
+
         flex: 1,
+
         backgroundColor: "white"
     },
     header: {
