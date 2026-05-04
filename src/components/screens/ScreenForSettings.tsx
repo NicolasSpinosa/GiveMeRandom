@@ -7,11 +7,11 @@ export const ScreenForSettings = () => (
     <View style={appStyles.screen}>
         <Setting
             label="Theme"
-            Component={() => <Text>System</Text>}
+            setting={<Text>System</Text>}
         />
         <Setting
             label="Language"
-            Component={() => <Text>English</Text>}
+            setting={<Text>English</Text>}
         />
     </View>
 );

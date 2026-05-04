@@ -5,16 +5,16 @@ import { genericStyles } from "../../styles/genericStyles";
 type SettingProps = {
     label: string,
     labelProps?: TextProps,
-    Component: React.FC
+    setting: React.ReactNode
 }
 
 export const Setting = ({
     label,
     labelProps,
-    Component
+    setting
 }: SettingProps) => (
     <View style={genericStyles.setting}>
         <Text {...labelProps}>{label}</Text>
-        <Component/>
+        {setting}
     </View>
 );
