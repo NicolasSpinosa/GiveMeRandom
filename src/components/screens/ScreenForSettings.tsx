@@ -2,13 +2,11 @@ import { View } from "react-native";
 import { appStyles } from "../../styles/appStyles";
 import { Text } from "../generics/Text";
 import { Setting } from "../settings/Setting";
+import { SettingForTheme } from "../settings/SettingForTheme";
 
 export const ScreenForSettings = () => (
     <View style={appStyles.screen}>
-        <Setting
-            label="Theme"
-            setting={<Text>System</Text>}
-        />
+        <SettingForTheme/>
         <Setting
             label="Language"
             setting={<Text>English</Text>}
