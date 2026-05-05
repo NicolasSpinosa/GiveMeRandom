@@ -1,6 +1,7 @@
 import { GestureResponderEvent, Pressable, View } from "react-native";
 import { Text } from "../generics/Text";
 import { genericStyles } from "../../styles/genericStyles";
+import { settingStyles } from "../../styles/setting";
 
 type SettingProps = {
     label: string,
@@ -15,7 +16,7 @@ const Setting = ({
     decorator
 }: SettingProps) => (
     <Pressable
-        style={genericStyles.setting}
+        style={settingStyles.pressable}
     >
         <View>
             <Text>{label}</Text>
