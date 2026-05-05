@@ -9,7 +9,7 @@ type SettingProps = {
     decorator?: React.ReactNode
 }
 
-const Setting = ({
+export const Setting = ({
     label,
     description,
     decorator
