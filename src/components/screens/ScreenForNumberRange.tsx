@@ -1,6 +1,6 @@
 import { TextInput, View } from "react-native";
 import { appStyles } from "../../styles/appStyles";
-import { Text } from "../generics/Text";
+import { Text } from "../primitive/Text";
 
 export const ScreenForNumberRange = () => (
     <View style={appStyles.screen}>

@@ -1,6 +1,6 @@
 import { DrawerHeaderProps } from "@react-navigation/drawer";
 import { View } from "react-native";
-import { Text } from "../generics/Text";
+import { Text } from "../primitive/Text";
 import { appStyles } from "../../styles/appStyles";
 import { AppHederButton } from "./AppHeaderButton";
 
