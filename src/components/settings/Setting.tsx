@@ -18,7 +18,7 @@ const Setting = ({
     <Pressable
         style={settingStyles.pressable}
     >
-        <View>
+        <View style={settingStyles.descriptor}>
             <Text>{label}</Text>
             {description && <Text>{description}</Text>}
         </View>
