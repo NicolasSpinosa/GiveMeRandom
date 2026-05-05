@@ -4,14 +4,14 @@ type DialogBoxProps = {
     visible: boolean,
     setVisible: (visible: boolean) => void,
     dialogStyle?: StyleProp<ViewStyle>,
-    content: React.ReactNode
+    children: React.ReactNode
 }
 
 export const DialogBox = ({
     visible,
     setVisible,
     dialogStyle,
-    content
+    children
 }: DialogBoxProps) => (
     <Modal
         visible={visible}
@@ -24,7 +24,7 @@ export const DialogBox = ({
                 style={StyleSheet.absoluteFill}
                 onPress={() => setVisible(false)}
             />
-            {content && <View style={[dialogStyle]}>{content}</View>}
+            {children && <View style={[dialogStyle]}>{children}</View>}
         </View>
     </Modal>
 );
