@@ -1,6 +1,5 @@
 import { GestureResponderEvent, Pressable, View } from "react-native";
 import { Text } from "../generics/Text";
-import { genericStyles } from "../../styles/genericStyles";
 import { settingStyles } from "../../styles/setting";
 
 type SettingProps = {

@@ -1,7 +1,7 @@
 import { Text as OG_Text, TextProps } from "react-native";
-import { genericStyles } from "../../styles/genericStyles";
+import { primitiveStyles } from "../../styles/primitiveStyles";
 
 export const Text = ({
     style,
     ...props
-}: TextProps) => <OG_Text {...props} style={[genericStyles.text, style]}/>;
+}: TextProps) => <OG_Text {...props} style={[primitiveStyles.text, style]}/>;
