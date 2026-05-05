@@ -1,20 +1,26 @@
-import { TextProps, View } from "react-native";
+import { GestureResponderEvent, Pressable, View } from "react-native";
 import { Text } from "../generics/Text";
 import { genericStyles } from "../../styles/genericStyles";
 
 type SettingProps = {
     label: string,
-    labelProps?: TextProps,
-    setting: React.ReactNode
+    description?: string,
+    onPress?: (event: GestureResponderEvent) => void,
+    decorator?: React.ReactNode
 }
 
-export const Setting = ({
+const Setting = ({
     label,
-    labelProps,
-    setting
+    description,
+    decorator
 }: SettingProps) => (
-    <View style={genericStyles.setting}>
-        <Text {...labelProps}>{label}</Text>
-        {setting}
-    </View>
+    <Pressable
+        style={genericStyles.setting}
+    >
+        <View>
+            <Text>{label}</Text>
+            {description && <Text>{description}</Text>}
+        </View>
+        <View>{decorator}</View>
+    </Pressable>
 );
