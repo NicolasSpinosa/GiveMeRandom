@@ -1,4 +1,5 @@
 import { Modal, Pressable, StyleProp, StyleSheet, View, ViewStyle } from "react-native";
+import { dialogBoxStyles } from "../../styles/dialogBoxStyles";
 
 type DialogBoxProps = {
     visible: boolean,
@@ -19,12 +20,18 @@ export const DialogBox = ({
         animationType="fade"
         onRequestClose={() => setVisible(false)}
     >
-        <View>
+        <View style={dialogBoxStyles.backdrop}>
             <Pressable
                 style={StyleSheet.absoluteFill}
                 onPress={() => setVisible(false)}
             />
-            {children && <View style={[dialogStyle]}>{children}</View>}
+            {children &&
+                <View
+                    style={[dialogBoxStyles.dialog, dialogStyle]}
+                >
+                    {children}
+                </View>
+            }
         </View>
     </Modal>
 );
