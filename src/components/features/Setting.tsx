@@ -8,7 +8,7 @@ type SettingProps = {
     label: string,
     description?: string,
     onPress?: (event: GestureResponderEvent) => void,
-    decorator: React.ReactNode,
+    decorator?: React.ReactNode,
     dialogContent: React.ReactNode
 }
 
@@ -24,6 +24,7 @@ export const Setting = ({
         <>
             <Pressable
                 style={settingStyles.pressable}
+                onPress={() => setVisible(!visible)}
             >
                 <View style={settingStyles.descriptor}>
                     <Text>{label}</Text>
