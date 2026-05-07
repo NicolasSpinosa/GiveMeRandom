@@ -3,8 +3,9 @@ import { Pressable, View } from "react-native";
 import { Text } from "../primitive/Text";
 import { appStyles } from "../../styles/appStyles";
 import OptionsIcon from "../../assets/icons/options.svg";
+import { Appbar } from "react-native-paper";
 
-export const AppHeader = ({
+export const Header = ({
     layout,
     options,
     route,
@@ -13,11 +14,9 @@ export const AppHeader = ({
     const title = options.title ?? route.name;
 
     return (
-        <View style={appStyles.header}>
-            <Pressable onPress={navigation.openDrawer}>
-                <OptionsIcon width={18} height={18} />
-            </Pressable>
-            <Text style={appStyles.headerTitle}>{title}</Text>
-        </View>
+        <Appbar.Header>
+            <Appbar.Action icon="menu" onPress={navigation.openDrawer}/>
+            <Appbar.Content title={title}/>
+        </Appbar.Header>
     );
 };
