@@ -1,7 +1,7 @@
 import { createDrawerNavigator, DrawerHeaderProps } from "@react-navigation/drawer";
 import { NavigationContainer } from "@react-navigation/native";
 import { ScreenForNumberRange } from "../screens/ScreenForNumberRange";
-import { AppHeader } from "./AppHeader";
+import { AppHeader } from "./Header";
 import { ScreenForSettings } from "../screens/ScreenForSettings";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { appStyles } from "../../styles/appStyles";
