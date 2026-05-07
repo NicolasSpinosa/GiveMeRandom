@@ -1,7 +1,7 @@
-import { ComponentWithProps } from "../../types";
+import { AnyComponentWithProps } from "../../types";
 
 type ComposeProviderProps = {
-    packedProviders: ComponentWithProps[],
+    packedProviders: AnyComponentWithProps[],
     children: React.ReactNode
 }
 
