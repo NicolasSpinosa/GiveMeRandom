@@ -1,0 +1,1 @@
+export type ComponentWithProps<P extends object = object> = [React.ComponentType<P>, P?];
