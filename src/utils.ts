@@ -1,4 +1,4 @@
-import { ComponentWithProps } from "../types";
+import { ComponentWithProps } from "./types";
 
 export const packProviderWithProps = <P extends object = object>(
     provider: React.ComponentType<P>,
